@@ -1,28 +1,37 @@
 import React, { Component } from 'react'
+// const imagePath = '../images/' + catInfo.catUrl
+// console.log(imagePath)
+// import catPic from imagePath
 
 class CatPic extends Component {
   render() {
-    const kitty = this.props.catName
+    const thisCat = this.props.catInfo
+    console.log(this.props)
     return (
       <figure>
-        <a href={'https://octodex.github.com//baracktocat' + kitty}>
-          <img class="cat-pic" src={'/images/' + kitty + '.jpg'} alt={kitty} />
+        <a href={'https://octodex.github.com//' + thisCat.catName}>
+          <img
+            className="cat-pic"
+            src={this.props.catInfo.image}
+            alt={thisCat.catName}
+          />
         </a>
         <figcaption>
-          <p>#001</p>
+          <p># + {thisCat.catIndex}</p>
           <ul>
             <li>the</li>
             <li>
-              <a class="pic-name" href={'https://octodex.github.com//' + kitty}>
-                {kitty.toUpperCase()}
-              </a>
+              <a
+                className="pic-name"
+                href={'https://octodex.github.com//' + thisCat.catName}
+              />
             </li>
             <li>by</li>
             <li>
-              <a href="https://github.com/cameronmcefee">
+              <a href={'https://github.com/' + thisCat.catAuthor}>
                 <img
-                  src={'/images/' + kitty + ' author.jpeg'}
-                  alt={kitty + ' author'}
+                  src={'/images/' + thisCat.catName + ' author.jpeg'}
+                  alt={thisCat.catAuthor + ' author'}
                 />
               </a>
             </li>

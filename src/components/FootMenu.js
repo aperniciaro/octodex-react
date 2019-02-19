@@ -5,22 +5,22 @@ class FootMenu extends Component {
     return (
       <footer>
         <nav>
-          <section class="link-menu">
+          <section className="link-menu">
             <a
-              class="foot-menu-item"
+              className="foot-menu-item"
               href="http://feeds.feedburner.com/Octocats"
             >
               RSS
             </a>
             <a
-              class="foot-menu-item"
+              className="foot-menu-item"
               href="https://octodex.github.com/faq.html"
             >
               FAQ
             </a>
           </section>
         </nav>
-        <section class="legal">
+        <section className="legal">
           <p>© 2013 – 2019 GitHub, Inc.</p>
           <p>All rights reserved.</p>
         </section>
