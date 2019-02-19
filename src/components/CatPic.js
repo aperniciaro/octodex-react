@@ -4,11 +4,11 @@ class CatPic extends Component {
   render() {
     return (
       <figure>
-        <a href="https://octodex.github.com//baracktocat">
+        <a href=("https://octodex.github.com//baracktocat"+{this.props.catName})>
           <img
             class="cat-pic"
-            src="/images/baracktocat.jpg"
-            alt="Baracktocat"
+            src=("/images/"+{this.props.catName}+".jpg")
+            alt={this.props.catName}
           />
         </a>
         <figcaption>
@@ -18,17 +18,17 @@ class CatPic extends Component {
             <li>
               <a
                 class="pic-name"
-                href="https://octodex.github.com//baracktocat"
+                href="https://octodex.github.com//"+{this.props.catName}
               >
-                Baracktocat
+                {this.props.catname.toUpperCase()}
               </a>
             </li>
             <li>by</li>
             <li>
               <a href="https://github.com/cameronmcefee">
                 <img
-                  src="/images/baracktocat author.jpeg"
-                  alt="Baracktocat author"
+                  src="/images/"+{this.props.catName}+" author.jpeg"
+                  alt={this.props.catName}+" author"
                 />
               </a>
             </li>
