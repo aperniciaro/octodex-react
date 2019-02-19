@@ -18,6 +18,21 @@ const cats = [
   'topguntocat'
 ]
 
+const authors = [
+  'cameronmcefee',
+  'kimestoesta',
+  'JohnCreek',
+  'nickh',
+  'heyhayhay',
+  'tonyjaramillo',
+  'jeejkang',
+  'jeejkang',
+  'heyhayhay',
+  'cameronmcefee',
+  'jeejkang',
+  'leereilly'
+]
+
 class App extends Component {
   render() {
     return (
