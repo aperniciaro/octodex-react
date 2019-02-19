@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class CatPics extends Component {
+class CatPic extends Component {
   render() {
     return (
       <figure>
@@ -39,4 +39,4 @@ class CatPics extends Component {
   }
 }
 
-export default CatPics
+export default CatPic
