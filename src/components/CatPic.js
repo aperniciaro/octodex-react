@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class CatPic extends Component {
   render() {
-    let kitty = this.props.catName
+    const kitty = this.props.catName
     return (
       <figure>
         <a href = "https://octodex.github.com//baracktocat" + {kitty}>
