@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-// const imagePath = '../images/' + catInfo.catUrl
-// console.log(imagePath)
-// import catPic from imagePath
 
 class CatPic extends Component {
   render() {
@@ -10,11 +7,7 @@ class CatPic extends Component {
     return (
       <figure>
         <a href={'https://octodex.github.com//' + thisCat.catName}>
-          <img
-            className="cat-pic"
-            src={this.props.catInfo.image}
-            alt={thisCat.catName}
-          />
+          <img className="cat-pic" src={thisCat.catImg} alt={thisCat.catName} />
         </a>
         <figcaption>
           <p># + {thisCat.catIndex}</p>

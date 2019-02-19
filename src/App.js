@@ -2,7 +2,34 @@ import React, { Component } from 'react'
 import NavMenu from './components/NavMenu'
 import CatPic from './components/CatPic'
 import FootMenu from './components/FootMenu'
+
 import barack from './images/baracktocat.jpg'
+import dino from './images/baracktocat.jpg'
+import dune from './images/baracktocat.jpg'
+import homer from './images/baracktocat.jpg'
+import justice from './images/baracktocat.jpg'
+import liberty from './images/baracktocat.jpg'
+import privateInvest from './images/baracktocat.jpg'
+import robo from './images/baracktocat.jpg'
+import stNic from './images/baracktocat.jpg'
+import spectro from './images/baracktocat.jpg'
+import stormTrooper from './images/baracktocat.jpg'
+import topGun from './images/baracktocat.jpg'
+
+const catImages = [
+  barack,
+  dino,
+  dune,
+  homer,
+  justice,
+  liberty,
+  privateInvest,
+  robo,
+  stNic,
+  spectro,
+  stormTrooper,
+  topGun
+]
 
 const catUrls = [
   'baracktocat.jpg',
@@ -41,7 +68,7 @@ for (let i = 0; i < catUrls.length; i++) {
     catAuthor: authors[i],
     // catName: this.catUrl.split('.')[0].toUpperCase(),
     catIndex: i,
-    image: barack
+    catImg: catImages[i]
   }
   cats.push(catObj)
 }
