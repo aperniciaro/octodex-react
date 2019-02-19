@@ -4,7 +4,7 @@ class CatPic extends Component {
   render() {
     const thisCat = this.props.catInfo
     return (
-      console.log('https://octodex.github.com/' + thisCat.catName)
+      // console.log('https://octodex.github.com/' + thisCat.catName)
       <figure>
         <a href={'https://octodex.github.com/' + thisCat.catName}>
           <img className="cat-pic" src={thisCat.catImg} alt={thisCat.catName} />
