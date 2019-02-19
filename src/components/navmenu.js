@@ -5,27 +5,27 @@ class NavMenu extends Component {
     return (
       <header>
         <nav>
-          <ul class="home-link">
+          <section class="home-link">
             <a class="ghub" href="/index.html">
-              <li>GitHub</li>
+              GitHub
             </a>
             <a class="odex" href="/index.html">
-              <li>Octodex</li>
+              Octodex
             </a>
-          </ul>
+          </section>
         </nav>
         <nav>
-          <ul class="link-menu">
+          <section class="link-menu">
             <a class="menu-item" href="http://feeds.feedburner.com/Octocats">
-              <li>RSS</li>
+              RSS
             </a>
             <a class="menu-item" href="https://octodex.github.com/faq.html">
-              <li>FAQ</li>
+              FAQ
             </a>
             <a class="menu-item" href="http://www.github.com/">
-              <li>Back to GitHub</li>
+              Back to GitHub
             </a>
-          </ul>
+          </section>
         </nav>
       </header>
     )
