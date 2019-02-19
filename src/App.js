@@ -16,6 +16,19 @@ import spectro from './images/spectrocat.png'
 import stormTrooper from './images/stormtroopocat.png'
 import topGun from './images/topguntocat.png'
 
+import barackAuth from './images/baracktocat author.jpeg'
+import dinoAuth from './images/dinotocat author.jpeg'
+import duneAuth from './images/dunetocat author.png'
+import homerAuth from './images/homercat author.jpeg'
+import justiceAuth from './images/justicetocat author.jpeg'
+import libertyAuth from './images/octoliberty author.png'
+import privateInvestAuth from './images/privateinvestocat author.jpeg'
+import roboAuth from './images/robotocat author.jpeg'
+import stNicAuth from './images/saint_nictocat author.jpeg'
+import spectroAuth from './images/spectrocat author.jpeg'
+import stormTrooperAuth from './images/stormtroopocat author.jpeg'
+import topGunAuth from './images/topguntocat author.jpeg'
+
 const catImages = [
   barack,
   dino,
@@ -60,13 +73,28 @@ const authors = [
   'jeejkang',
   'leereilly'
 ]
+const authorUrls = [
+  barackAuth,
+  dinoAuth,
+  duneAuth,
+  homerAuth,
+  justiceAuth,
+  libertyAuth,
+  privateInvestAuth,
+  roboAuth,
+  stNicAuth,
+  spectroAuth,
+  stormTrooperAuth,
+  topGunAuth
+]
 
 let cats = []
 for (let i = 0; i < catUrls.length; i++) {
   let catObj = {
     catUrl: catUrls[i],
     catAuthor: authors[i],
-    // catName: this.catUrl.split('.')[0].toUpperCase(),
+    catName: catUrls[i].split('.')[0].toUpperCase(),
+    authorUrl: authorUrls[i],
     catIndex: i,
     catImg: catImages[i]
   }

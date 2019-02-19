@@ -3,10 +3,10 @@ import React, { Component } from 'react'
 class CatPic extends Component {
   render() {
     const thisCat = this.props.catInfo
-    console.log(this.props)
     return (
+      console.log('https://octodex.github.com/' + thisCat.catName)
       <figure>
-        <a href={'https://octodex.github.com//' + thisCat.catName}>
+        <a href={'https://octodex.github.com/' + thisCat.catName}>
           <img className="cat-pic" src={thisCat.catImg} alt={thisCat.catName} />
         </a>
         <figcaption>
@@ -16,14 +16,16 @@ class CatPic extends Component {
             <li>
               <a
                 className="pic-name"
-                href={'https://octodex.github.com//' + thisCat.catName}
-              />
+                href={'https://octodex.github.com/' + thisCat.catName}
+              >
+                {thisCat.catName}
+              </a>
             </li>
             <li>by</li>
             <li>
               <a href={'https://github.com/' + thisCat.catAuthor}>
                 <img
-                  src={'/images/' + thisCat.catName + ' author.jpeg'}
+                  src={thisCat.authorUrl}
                   alt={thisCat.catAuthor + ' author'}
                 />
               </a>
