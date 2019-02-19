@@ -2,13 +2,14 @@ import React, { Component } from 'react'
 
 class CatPic extends Component {
   render() {
+    let kitty = this.props.catName
     return (
       <figure>
-        <a href = "https://octodex.github.com//baracktocat" + {this.props.catName}>
+        <a href = "https://octodex.github.com//baracktocat" + {kitty}>
           <img
             class = "cat-pic"
-            src = "/images/" + {this.props.catName} + ".jpg"
-            alt = {this.props.catName}
+            src = "/images/" + {kitty} + ".jpg"
+            alt = {kitty}
           />
         </a>
         <figcaption>
@@ -18,17 +19,17 @@ class CatPic extends Component {
             <li>
               <a
                 class = "pic-name"
-                href = "https://octodex.github.com//" + {this.props.catName}
+                href = "https://octodex.github.com//" + {kitty}
               >
-                {this.props.catname.toUpperCase()}
+                {kitty.toUpperCase()}
               </a>
             </li>
             <li>by</li>
             <li>
               <a href = "https://github.com/cameronmcefee">
                 <img
-                  src = "/images/" + {this.props.catName} + " author.jpeg"
-                  alt = {this.props.catName} + " author"
+                  src = "/images/" + {kitty} + " author.jpeg"
+                  alt = {kitty} + " author"
                 />
               </a>
             </li>
