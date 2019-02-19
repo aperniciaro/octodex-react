@@ -10,7 +10,7 @@ class CatPic extends Component {
           <img className="cat-pic" src={thisCat.catImg} alt={thisCat.catName} />
         </a>
         <figcaption>
-          <p># + {thisCat.catIndex}</p>
+          <p>#{thisCat.catIndex + 1}</p>
           <ul>
             <li>the</li>
             <li>
