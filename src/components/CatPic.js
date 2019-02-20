@@ -18,7 +18,8 @@ class CatPic extends Component {
                 className="pic-name"
                 href={'https://octodex.github.com/' + thisCat.catName}
               >
-                {thisCat.catName}
+                {thisCat.catName.charAt(0).toUpperCase() +
+                  thisCat.catName.slice(1)}
               </a>
             </li>
             <li>by</li>

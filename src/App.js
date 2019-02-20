@@ -93,7 +93,7 @@ for (let i = 0; i < catUrls.length; i++) {
   let catObj = {
     catUrl: catUrls[i],
     catAuthor: authors[i],
-    catName: catUrls[i].split('.')[0].toUpperCase(),
+    catName: catUrls[i].split('.')[0],
     authorUrl: authorUrls[i],
     catIndex: i,
     catImg: catImages[i]
